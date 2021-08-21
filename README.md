@@ -1,5 +1,7 @@
 This application is a small technical exercise for VisionTS. Below are the endpoints and their documentation
 
+This project is hosted on https://visionts.herokuapp.com
+
 | Method | Endpoint              | Request Body                | Returns                      |
 | ------ | --------------------- | --------------------------- | ---------------------------- |
 | GET    | `/api/weather/{city}` | - `empty`                   | `{latitude, longitude, temp}`|
@@ -10,7 +12,7 @@ This application is a small technical exercise for VisionTS. Below are the endpo
 # Exercise 1
 - GET [/api/weather/{city}](): This endpoint requires that you send a city in the url. In turn, it will return a json object containing that cities latitude, longitude and temperature in farenheit. Cities can have spaces in the name.
 ## Examples
-[localhost:5000/api/weather/London](http://localhost:5000/api/weather/London) - Returns:
+[https://visionts.herokuapp.com/api/weather/London](https://visionts.herokuapp.com/api/weather/London) - Returns:
 
     {
         "latitude": 51.5085,
@@ -25,7 +27,7 @@ The error messages and status code are pulled directly from the openweathermap A
 # Exercise 2
 - GET [/api/read/{filename}](): This endpoint requires that you send the name of an existing file in the url. The endpoint will return a string literal containing the text files contents exactly as they are.
 ## Examples
-[localhost:5000/api/read/vision](http://localhost:5000/api/read/vision) - Returns:
+[https://visionts.herokuapp.com/api/read/vision](https://visionts.herokuapp.com/api/read/vision) - Returns:
 
     This are my technical exercises for VisionTS
 
@@ -34,7 +36,7 @@ The error messages and status code are pulled directly from the openweathermap A
 # Exercise 3
 - POST [/api/register](): This endpoint requires that a JSON object in the body be sent with the request, containing userId, name and lastName. It will take this information and put it onto a MongoDB database. userID, name, and lastName are all required.
 ## Examples
-[localhost:5000/api/register](http://localhost:5000/api/register) with:
+[https://visionts.herokuapp.com/api/register](https://visionts.herokuapp.com/api/register) with:
 
     {
         "userId": 1232,
@@ -48,7 +50,7 @@ Returns:
 # Exercise 4
 - GET [/api/get/:id](): This endpoint requires that a JSON object in the body be sent with the request, containing userId, name and lastName. It will take this information and put it onto a MongoDB database.
 ## Examples
-[localhost:5000/api/get/1234](http://localhost:5000/api/get/1234) - Returns:
+[https://visionts.herokuapp.com/api/get/1234](https://visionts.herokuapp.com/api/get/1234) - Returns:
 
     {
         "userId": 1232,
