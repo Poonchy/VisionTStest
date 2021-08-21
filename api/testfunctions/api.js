@@ -7,7 +7,7 @@ const {
 } = require('fs');
 const path = require('path');
 const {MongoClient} = require('mongodb');
-const MW = require('./middleware.js').default;
+const MW = require('./middleware.js');
 
 // Endpoint for Exercise #2, recieves a file name in URL and reads file names in root directory
 router.get('/read/:filename', function (req, res) {
